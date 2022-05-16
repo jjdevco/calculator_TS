@@ -1,10 +1,18 @@
+import { useTheme } from "../hooks/useTheme";
+
 interface ButtonProps {
   children: React.ReactNode | Array<React.ReactNode>;
   className?: string | (() => string);
+  onClick?: (evt: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export function Button({ children, className = "" }: ButtonProps) {
-  const themeVariant = "light";
-  const classes = `btn ${themeVariant} ${className}`;
-  return <button className={classes}>{children}</button>;
+export function Button({ children, className = "", ...rest }: ButtonProps) {
+  const { theme } = useTheme();
+  const classes = `btn ${theme} ${className}`;
+
+  return (
+    <button className={classes} {...rest}>
+      {children}
+    </button>
+  );
 }
