@@ -17,7 +17,7 @@
     border-bottom: 3px solid transparent;
     padding-top: 0.3rem;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: all 0.2s ease-in-out;
   }
 
@@ -29,6 +29,8 @@
   }
 
   .keyboard {
+    width: 320px;
+    border-radius: 0.3rem;
   }
 
   .switcher {
@@ -36,6 +38,18 @@
 }
 
 @layer components {
+  .container.light {
+    background-color: hsl(0, 0%, 90%);
+  }
+
+  .container.dark {
+    background-color: hsl(222, 26%, 31%);
+  }
+
+  .container.alternative {
+    background-color: hsl(268, 75%, 9%);
+  }
+
   .btn.light {
     background-color: hsl(45, 7%, 89%);
     border-color: hsl(35, 11%, 61%);
@@ -113,5 +127,17 @@
   }
   .btn.alternative.secondary:hover {
     background-color: hsl(176, 100%, 79%);
+  }
+
+  .keyboard.light {
+    background-color: hsl(0, 5%, 81%);
+  }
+
+  .keyboard.dark {
+    background-color: hsl(223, 31%, 20%);
+  }
+
+  .keyboard.alternative {
+    background-color: hsl(268, 71%, 12%);
   }
 }
