@@ -26,10 +26,13 @@
   }
 
   .display {
+    border-radius: 0.3rem;
+    transition: all 0.2s ease-in;
   }
 
   .keyboard {
     border-radius: 0.3rem;
+    transition: all 0.2s ease-in;
   }
 
   .switch,
@@ -175,5 +178,17 @@
   }
   .switch.alternative div {
     background-color: hsl(185, 42%, 37%);
+  }
+
+  .display.light {
+    background-color: hsl(0, 0%, 93%);
+  }
+
+  .display.dark {
+    background-color: hsl(224, 36%, 15%);
+  }
+
+  .display.alternative {
+    background-color: hsl(268, 71%, 12%);
   }
 }

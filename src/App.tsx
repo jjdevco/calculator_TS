@@ -7,11 +7,18 @@ function App() {
 
   return (
     <main
-      className={`${theme} container w-screen h-screen max-w-full flex flex-col justify-center items-center text`}
+      className={`${theme} container w-screen h-screen max-w-full flex flex-col justify-center items-center text gap-4`}
     >
       <div className="flex justify-between items-end w-80">
         <h1 className="text-lg font-bold text-center">Calculator</h1>
         <ThemeSwitcher />
+      </div>
+      <div
+        className={`${theme} display w-80 h-20 overflow-x-auto flex items-center justify-end px-3 pt-1`}
+      >
+        <span className="text-4xl font-bold tracking-widest text-right">
+          1123123123
+        </span>
       </div>
       <div
         className={`${theme} keyboard w-80 grid grid-cols-4 grid-rows-5 place-items-center p-4`}
