@@ -18,7 +18,7 @@
     padding-top: 0.3rem;
     font-weight: 700;
     font-size: 1.2rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in;
   }
 
   .btn-large {
@@ -29,11 +29,12 @@
   }
 
   .keyboard {
-    width: 320px;
     border-radius: 0.3rem;
   }
 
-  .switcher {
+  .switch,
+  .switch div {
+    transition: all 0.2s ease-in;
   }
 }
 
@@ -50,9 +51,22 @@
     background-color: hsl(268, 75%, 9%);
   }
 
+  .text.light {
+    color: hsl(60, 10%, 19%);
+  }
+
+  .text.dark {
+    color: white;
+  }
+
+  .text.alternative {
+    color: hsl(52, 100%, 62%);
+  }
+
   .btn.light {
     background-color: hsl(45, 7%, 89%);
     border-color: hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
   }
   .btn.light:hover {
     background-color: white;
@@ -79,6 +93,7 @@
   .btn.dark {
     background-color: hsl(30, 25%, 89%);
     border-color: hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
   }
   .btn.dark:hover {
     background-color: white;
@@ -139,5 +154,26 @@
 
   .keyboard.alternative {
     background-color: hsl(268, 71%, 12%);
+  }
+
+  .switch.light {
+    background-color: hsl(0, 5%, 81%);
+  }
+  .switch.light div {
+    background-color: hsl(25, 98%, 40%);
+  }
+
+  .switch.dark {
+    background-color: hsl(223, 31%, 20%);
+  }
+  .switch.dark div {
+    background-color: hsl(6, 63%, 50%);
+  }
+
+  .switch.alternative {
+    background-color: hsl(268, 71%, 12%);
+  }
+  .switch.alternative div {
+    background-color: hsl(185, 42%, 37%);
   }
 }

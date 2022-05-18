@@ -1,4 +1,5 @@
 import { Button } from "./components/Button";
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import { useTheme } from "./hooks/useTheme";
 
 function App() {
@@ -6,10 +7,14 @@ function App() {
 
   return (
     <main
-      className={`${theme} container w-screen h-screen max-w-full flex flex-col justify-center items-center`}
+      className={`${theme} container w-screen h-screen max-w-full flex flex-col justify-center items-center text`}
     >
+      <div className="flex justify-between items-end w-80">
+        <h1 className="text-lg font-bold text-center">Calculator</h1>
+        <ThemeSwitcher />
+      </div>
       <div
-        className={`${theme} keyboard grid grid-cols-4 grid-rows-5 place-items-center p-4`}
+        className={`${theme} keyboard w-80 grid grid-cols-4 grid-rows-5 place-items-center p-4`}
       >
         <Button onClick={() => {}}>7</Button>
         <Button onClick={() => {}}>8</Button>
